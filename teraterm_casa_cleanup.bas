@@ -45,11 +45,11 @@ End Sub
 
 Sub ReportSetup()
     Sheets("Sheet1").Select
-    Sheets("Sheet1").Copy After:=Sheets(1)
-    Sheets("Sheet1 (2)").Select
-    Sheets("Sheet1 (2)").Name = "report_copy"
-    Sheets("Sheet1").Select
     Sheets("Sheet1").Name = "report"
+    Sheets("report").Select
+    Sheets("report").Copy After:=Sheets(1)
+    Sheets("report (2)").Select
+    Sheets("report (2)").Name = "report_copy"                                     
 End Sub
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
